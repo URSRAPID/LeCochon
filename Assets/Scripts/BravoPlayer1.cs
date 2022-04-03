@@ -2,18 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class Menu : MonoBehaviour
+
+public class BravoPlayer1 : MonoBehaviour
 {
-    public void PlayGame1Player()
+    public void PlayNewGame()
     {
         SceneManager.LoadScene("Scene1Player");
     }
-    public void duquit()
+    public void Menu()
     {
-        Debug.Log("Il est hors jeu");
-        Application.Quit();
-        
+        SceneManager.LoadScene("Menu");
     }
 }
-   
-
